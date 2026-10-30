@@ -3,12 +3,109 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My portfolio</title>
+  <title>Andrew — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Semi+Condensed:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <div class="view-cube" aria-hidden="true">
+    <div class="cube" data-view="home">
+      <span class="face face-front">Front</span>
+      <span class="face face-back">Back</span>
+      <span class="face face-right">Right</span>
+      <span class="face face-left">Left</span>
+      <span class="face face-top">Top</span>
+      <span class="face face-bottom">Bottom</span>
+    </div>
+  </div>
+
+  <nav class="feature-tree" aria-label="Feature tree navigation">
+    <div class="tree-header">
+      <span class="tree-system-icon" aria-hidden="true">■</span>
+      <span class="tree-title">Model Tree: Andrew</span>
+    </div>
+    <ul>
+      <li><a href="#home"><span class="tree-icon" aria-hidden="true">▸</span>Home</a></li>
+      <li><a href="#about"><span class="tree-icon" aria-hidden="true">▸</span>About</a></li>
+      <li><a href="#projects"><span class="tree-icon" aria-hidden="true">▸</span>Projects</a></li>
+      <li><a href="#skills"><span class="tree-icon" aria-hidden="true">▸</span>Skills</a></li>
+      <li><a href="#contact"><span class="tree-icon" aria-hidden="true">▸</span>Contact</a></li>
+    </ul>
+  </nav>
+
   <main>
-    <h1>Your portfolio starts here</h1>
-    <p>Fill in SPEC.md, then ask the agent to build your site.</p>
+    <section class="hero" id="home" aria-labelledby="home-title">
+      <div class="hero-content">
+        <h1 id="home-title" class="hero-name part-x">Andrew</h1>
+        <p class="hero-intro part-y">Third year Data Science student at York University.</p>
+        <p class="dim-line part-z">
+          <span class="dim-rule"></span>
+          <span class="dim-label">York University</span>
+          <span class="dim-rule"></span>
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <h2 id="about-title" class="section-title">About</h2>
+      <div class="panel about-panel">
+        <p>I enjoy building programs that analyze video game data. My latest project analyzes a racing game's physics to help find the optimal battery deployment strategies.</p>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title" class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <span class="callout" aria-hidden="true"></span>
+          <h3 class="card-title">ProjectApex Telemetry extractor</h3>
+          <p class="card-desc">Visualizes speed trace data from the game Project Apex.</p>
+          <p class="card-action">
+            <a href="https://github.com/andrewtoy9/Formula-Apex-Telemetry-Tool" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </p>
+        </article>
+
+        <article class="project-card">
+          <span class="callout" aria-hidden="true"></span>
+          <h3 class="card-title">3D stock visualization</h3>
+          <p class="card-desc">An art installation exhibited at InterAccess Toronto. Visualizes S&amp;P 500 tech stocks as 3d objects that change in size.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title" class="section-title">Skills</h2>
+      <ul class="skills-list">
+        <li class="tag">Python</li>
+        <li class="tag">Java</li>
+        <li class="tag">R</li>
+      </ul>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="section-title">Contact</h2>
+      <dl class="title-block">
+        <div class="tb-cell">
+          <dt>ENGINEER</dt>
+          <dd>Andrew</dd>
+        </div>
+        <div class="tb-cell">
+          <dt>INSTITUTION</dt>
+          <dd>York University</dd>
+        </div>
+        <div class="tb-cell">
+          <dt>EMAIL</dt>
+          <dd><a href="mailto:andrewtoy9@gmail.com">andrewtoy9@gmail.com</a></dd>
+        </div>
+        <div class="tb-cell">
+          <dt>GITHUB</dt>
+          <dd><a href="https://github.com/andrewt9" target="_blank" rel="noopener noreferrer">github.com/andrewt9</a></dd>
+        </div>
+      </dl>
+    </section>
   </main>
 </body>
 </html>
